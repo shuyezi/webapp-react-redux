@@ -5,7 +5,7 @@
 
 ## 目录结构 ##
 
-	--app/
+	--app/——————————————————————————————————————————————————————————————app主目录
 		--Actions/
 		--Components/
 		--Constants/
@@ -13,18 +13,18 @@
 		--Reducers/
 		--Routers/
 		index.js
-	--common/
+	--common/———————————————————————————————————————————————————————————公共目录
 		--javascript/
 		--style/
 		index.html
-	--configs/
+	--configs/——————————————————————————————————————————————————————————配置目录（主要js配置）
 		config.build.js
 		config.routers.js
 		config.user.js
-	--libs/
+	--libs/—————————————————————————————————————————————————————————————第三方库
 		--javascript/
 			index.js
-	--task/
+	--task/—————————————————————————————————————————————————————————————任务目录（初始化等工作可以在这里加上）
 	.babelrc
 	package.json
 	README.md
