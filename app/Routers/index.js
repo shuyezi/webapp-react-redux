@@ -1,4 +1,4 @@
-import { Component } from 'react'
+import React, { Component } from 'react'
 import { Router, Route } from 'react-router'
 
 import routers from '../../configs/config.routers'
