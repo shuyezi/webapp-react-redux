@@ -1,0 +1,90 @@
+/*
+ * @name 基础样式
+ * @usage 重设浏览器默认样式....
+ * @time 2016.10.20 10:16
+ */
+
+ @charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+	font-family: sans-serif;
+	color: #333333;
+	-ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout:none;
+    font-size: 14px;
+    height: 100%;
+}
+
+table{ 
+	border-collapse:collapse; 
+	border-spacing:0; 
+}
+
+fieldset, img,button{ border:none; }
+
+ol, ul{ list-style:none; }
+
+
+a, a:hover, ins{ text-decoration:none; color: #333333; }
+
+//上下标
+sub, sup{ font-size:75%; line-height:0; position:relative; vertical-align:baseline; } 
+sup{ top:-0.5em; }
+sub{ bottom:-0.25em; }
+
+//一些表单默认样式
+select, textarea, input{ 
+	font-size:100%; 
+	outline:none;
+	&::-webkit-input-placeholder{ color:#bbbbbb; }
+}
+textarea{ resize: none; }
+button,input,optgroup,select,textarea {
+    -webkit-appearance:none; /*去掉webkit默认的表单样式*/
+    -webkit-tap-highlight-color: transparent; /*去掉点击时的蓝色外边框和灰色半透明背景*/
+}
+
+//清除浮动
+.clearfix{
+	zoom:1; /* for IE6 IE7 */
+	&:before{
+		content:""; 
+		display:table;
+	}
+	&:after{
+		content:""; 
+		display:table;
+		clear:both; 
+		overflow:hidden;
+	}
+} 
+.clear{ 
+	clear:both; 
+	display:block; 
+	overflow:hidden; 
+	height:0; 
+	line-height:0; 
+	font-size:0; 
+}
+
+//设置显示和隐藏
+.hide { display:none !important; visibility:hidden; }
+.block { display:block !important; }
+
+//设置浮动
+.fl{ float:left; display:inline; }
+.fr{ float:right; display:inline; }
+
+//文字对齐
+.tl{ text-align: left; }
+.tr{ text-align: right; }
